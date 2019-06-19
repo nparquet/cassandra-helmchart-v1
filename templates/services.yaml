@@ -38,7 +38,7 @@ spec:
       port: 7199	# Cassandra JMX monitoring port.
   selector:
     statefulset.kubernetes.io/pod-name: {{ $root.Values.name }}-1
-  loadBalancerIP: {{ $ip }}
+  loadBalancerIP: "10.0.0.1"
 ---
 #{{- end }}
 
